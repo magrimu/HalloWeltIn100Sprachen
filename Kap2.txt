@@ -1,0 +1,3 @@
+Hallo BIOS
+BIOS steht für "Basic Input/Output System" und ist ein Standard, der allen gebräuchlichen Komponenten von Heimcomputern eine rudimentäre
+Kommunikation ermöglicht. 
