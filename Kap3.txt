@@ -1,0 +1,44 @@
+1 Byte sind 8 Bit, sind 256 Zahlenwerte in einem Register.
+Sind 16x16 binäre Kombinationen, quasi 0xFF. Damit kann man, solange man Text darstellen will, folgende Sachen machen:
+ 
+Hallo ASCII
+in lang: American Standard Code for Information Interchange.
+Unter ASCII versteht man die Abbildung von 128 Binärwerten auf Buchstaben. Mittels ASCII Code die Buchstaben HALLO WELT zu erzeugen würde man folgende Binärwerte verwenden:
+0x48, 0x41, 0x4C, 0x4C, 0x4F, 0x20, 0x57, 0x45,  0x4C, 0x54
+Kleinbuchstaben gehen aber auch.
+ 
+Hallöchen ISO 8859-1 (Latin-1)
+Wollte man HALLO WELT in Latin-1 schreiben, verwendete man dafür dieselben Binärwerte wie in ASCII. Was aber ASCII nicht kann, ist: den Schriftzug "HäLLö WüLT" mittels Binärwerten auszudrücken.
+Latin-1 hingegen kann Umlaute:
+0x48, 0xE5, 0x4C, 0x4C, 0xF6, 0x20, 0x57, 0xFB,  0x4C, 0x54
+ 
+Hallo größere Register...
+Hallo UTF-8
+...will ein bissle mehr sein als ASCII, ist es aber kaum. Es werden in den ersten 128 Zeichen exakt die Werte von ASCII verwendet. (Geht bis 7F, weil immer eine 0 am Anfang mitgeführt wird.)
+Darüber hinaus behauptet UTF-8 auch größere Binärwerte abbilden zu können. Man kapiert aber nicht, warum es dann noch UTF-8 heißt, wenn es mehr als 8 Bit hernimmt, um Buchstaben zu definieren.
+Im Browser geht es prinzipiell, dass Umlaute (mittels 2 Bytes) dargestellt werden, dafür reicht UTF-8, aber man möchte damit nicht programmieren. Blöd ist auch: Umlaute gehen, aber sie gehen anders als in Latin-1.
+ 
+Hallo UTF-16, Hallo Unicode
+UTF-16 hat in .Net/c# Maximalwert 0xFFFF sind 256x256=65536 verschiedene Werte.
+UTF-16 wird vom Unicode Konsortium definiert und heißt in lang: Universal Multiple-Octet Coded Character Set (UCS) Transformation Format for 16 Planes of Group 00.
+Ich übersetze: Abbildungsformat einer univesalen, vielfach-Octet kodierten Buchstabenmenge für 16 Ebenen der Gruppe 00.
+Abbildungsformat meint dabei Binärwerte, die in bestimmte Buchstaben übersetzt werden. Ein Buchstabe bildet einen Binärwert ab.
+Die Binärwerte werden in 8er Gruppen (8 Bit, 1 Byte) zusammengefasst; das Format hat den Anspruch universell (i.e. immer) gültig zu sein.
+Ferner gibt es 16 Ebenen der Gruppe 00.
+Davon sind 2 Ebenen interessant:
+ 
+Hallo BMP (Unicode)
+Das ist, was man in C# mit einem UTF-16 Buchstaben ausdrücken kann. z.B. €
+Basic Multilingual Plane (BMP; deutsch Mehrsprachige Basis-Ebene, auch als Plane 0 bezeichnet)
+ 
+Hallo SMP (Unicode)
+Das sind Unicode Buchstaben die größere Werte als 0xFFFF abbilden. Dazu ghört der Violinschlüssel, Mahongspielsteine und Emojis (i.e. Smilies).
+Supplementary Multilingual Plane (SMP; dt. Ergänzende mehrsprachige Ebene, auch als Plane 1 bezeichnet)
+Man muss sich nur merken UTF-X bedeutet nicht, dass man X Bits zum Speichern von Binärwerten zur Verfügung hat.
+Möchte man Ebenen verwenden, die größere Binärwerte als 0xFFFF haben, brauch man System.Text.UTF32Encoding
+ 
+Hallo Big Endian
+...und das Dicke Ende kommt noch! Der ultimative Blödsinn ist, dass man Bytes in der falschen Reihenfolge aneinander reihen kann, um die Unicode Werte zu bilden:
+Das Eurozeichen, €, wird aus dem Wert 0x20AC gebildet. Dafür schickt man das Byte Array {0xAC, 0x20} in den Encoder. Aber ist das denn nicht falschrum?
+Das gleicht nicht der sinnvollen Datumsrepräsentation Jahr.Monat.Tag (i.e. Little Endian) sondern der "korrekten, deutschen" Schreibweise: Tag.Monat.Jahr (Big Endian).
+Sprich: beides richtig. Kontext beachten!
