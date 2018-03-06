@@ -42,3 +42,7 @@ Hallo Big Endian
 Das Eurozeichen, €, wird aus dem Wert 0x20AC gebildet. Dafür schickt man das Byte Array {0xAC, 0x20} in den Encoder. Aber ist das denn nicht falschrum?
 Das gleicht nicht der sinnvollen Datumsrepräsentation Jahr.Monat.Tag (i.e. Little Endian) sondern der "korrekten, deutschen" Schreibweise: Tag.Monat.Jahr (Big Endian).
 Sprich: beides richtig. Kontext beachten!
+Ein Beispiel, wie man mit c# den smilie "hugging face" bekommt sieht so aus:
+	    System.Text.UTF32Encoding encodingUNICODE = new System.Text.UTF32Encoding();
+            Byte[] textBytesCyrillic = { 0x17, 0xF9, 0x1, 0x0 };
+            return encodingUNICODE.GetString(textBytesCyrillic, 0, textBytesCyrillic.Length);
