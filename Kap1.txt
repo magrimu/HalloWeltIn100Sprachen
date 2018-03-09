@@ -9,7 +9,8 @@ Ergänzen Sie die nächste Zeile:
 ...
 na? Wissen Sie's? Kommen Sie drauf OHNE Vorkenntnisse? Das wäre m.E. unglaublich, aber sobald Sie die nächste Zeile ergänzen können,
 haben Sie eine wichtige Erkenntnis erlangt.
-Eine Zahl kann als Symbol gewertet werden, oder die Interpretation einer Zählung beinhalten.
+Eine Zahl kann als Symbol gewertet werden, also verhältnismäßig wenig Information enthalten, oder die Interpretation einer Zählung beinhalten.
+Sprich: die Information "Anzahl" beinhalten.
 So wäre z.B. die Folge
 #
 1#
@@ -38,11 +39,6 @@ Die Bitschreibweise nicht sehr übersichtlich ist, nutzen wir geeignete Methoden,
 die also Dezimalzahlen von 0 bis 15 darstellen können und schreiben dafür 0 bis F it der Bedeutung:
 0 bis 9 bedeuten Belegungen des Bits wie sie die Dezimalzahl ergeben und A bis F für die Werte 10 bis 15. Damit können wir die Belegung von 
 4 Bits in einem Zeichen (hier: einstellige Zahl oder einer der Buchstaben A-F) darstellen. 
-
-Hallo ASCII Code
-Wenn Sie ausser Zahlen auch Wörter speichern wollen, brauchen Sie eine Übersetzung zwischen Zahlen und Wörtern.
-Der einfachste Code ist der ASCII Code der gebräuchlichste ist UTF-8. In ASCII heißt Hallo Welt //TODO
-In UTF-8 übrigens auch, allerdings ist UTF-8 in der Lage, Umlaute usw darzustellen.
 
 Hallo Schriftart
 Wenn wir wissen, welches Zeichen wir darstellen wollen, wissen wir immer noch nicht, wie wir es zeichenen sollen - kaligraphisch.
