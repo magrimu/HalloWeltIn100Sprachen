@@ -1,0 +1,43 @@
+Hallo Kommandozeile (win)
+In Windows startet man die Kommandozeile (auch: Befehlszeilenfenster) mit "cmd". Sie dient einem zum Aufruf von Programmen. Dabei kann man 
+Befehlszeilenargumente mitliefern. Beispiel: "dir". "dir" listet Ordnerinhalte auf. Es ist möglich, einen Ordner anzugeben, standardmäßig 
+wird der aktuelle Ordner verwendet. Um den aktuellen Ordner (Pfad) zu ändern, bedient man sich des Kommandos "cd" (für change directory). 
+Möchte man eine Textdatei auslesen, kann man "type textdatei.txt" befehlen.
+
+Hallo Umgebungsvariable
+Entscheidend, ob ein Befehl dem Betriebssystem bekannt ist und damit sinnvoll verarbeitbar, oder nicht, ist: gibt es eine bekannte Definition des Befehls?
+Diese bekannten Definitionen werden gefunden, wenn sie z.B. in Orten der %PATH% Variable abgelegt sind. Die %PATH% Variable ist konfiguriert
+unter (Win) Systemeigenschaften > Umgebungsvariablen... > Systemvariablen. Der Befehl "echo %PATH%" gibt Auskunft über die Belegung der Variable.
+
+Hallo Editor
+Es gibt viele Programme, die erlauben, Schriftzeichen in eine Datei zu schreiben. Ich nenne sie: Editor. Mehrzahl: Editoren.
+Beispiele für Editoren:
+Notepad (windows), notepad++(windows), vim(Linux + Portierung), nano
+
+Hallo Notepad
+Notepad ist Bestandteil jeder Windowsinstallation. Vom Kommadozeile aus kann man mittels der Eingabe "notepad dateiname.txt" 
+den Editor Notepad starten, der sich bemüht, die Datei "dateiname.txt" zu erstellen. Das sieht man daran, dass er nach Start
+direkt fragt: "Die Datei dateiname.txt" kann nicht gefunden werden. Möchten Sie eine neue Datei erstellen?" Ja, Nein, Abbrechen.
+Die Entscheidung obliegt dem Benutzer.
+
+Hallo Modaler Dialog
+Was Notepad einem gezeigt hat, ist ein Modaler Dialog. Man kann einen Modalen Dialog mit verschiedenen Antworten beantworten.
+Dann ist er weg. Und das ist OK. Man sollte nur darauf achten, dass die Standardbelegung auf einem naheliegenden Wert liegt,
+so dass das "Durchentern" möglich ist.
+
+Hallo Notepad++
+Ein frei verfügbares Programm, das als minimaler vollständiger Editor angesehen werden kann ist: Notepad++. Notepad++ ist kein Betriebssystembestandteil.
+Es wird unterstützt: mehrere Character Encodings, Auswahl im Tabellenmodus (+Alt), Plugins für XML, Hex-Analyse unbekannter Dateien, Suchen in mehreren Dateien 
+gleichzeitig.
+
+Hallo vim
+vim ist im Linuxumfeld Bestandteil des Betriebssystems. Der Einsteig ist schwierig. Die Philisophie ist, sich auf ein 
+Kommandozeilenfenster zu beschränken. Das Wichtigste dabei sind Modi. Der Editor braucht den Befehlsmodus, in welchem man
+Dateien öffnet (Befehl "i" für insert), um in sie hinein zu schreiben, Dateien zu speichern ("w") und das Programm zu schließen ("q").
+Befindet man sich nicht im Befehlsmodus, sondern im insert Modus, werden die Befehle als Buchstaben in die Datei geschrieben. 
+Man wechselt also mit "i" in den insert Modus. Mit "Esc" kommt man vom insert Modus in den Befehlsmodus. Das erkennt man an
+der Befehlsaufforderung ":". Im insert Modus blinkt der Cursor am oberen Ende des Befehlszeilenfensters.
+
+Hallo nano
+nano gilt als der Linux Editor mit der kleineren Einstiegshürde. Die Befehle zum Öffnen, Speichern und Schließen der Datei findet man im selben Modus wie das Editieren.
+Es sind "Strg" + O, W, Q.
