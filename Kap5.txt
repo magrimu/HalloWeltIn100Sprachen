@@ -1,0 +1,11 @@
+Hallo Systembefehle
+Der direkte Weg, Befehle an das Betriebssystem zu erteilen ist die Kommandozeile.
+Viele Funktionen sind auch über graphische Benutzerschnittstelen zu erreichen, aber meist ist die Kommandozeile schneller.
+
+Hallo Herunterfahren
+In Windows befiehlt man "shutdown /s /t 0" für Rechner herunterfahren.
+"shutdown /r /t 0" bedeutet Reboot. Wenn die Zahlt hinter /t groß genug ist, hat man genug Zeit um mit "shutdown /a" den shutdown Befehl abbrechen kann.
+In Linux ist es "poweroff". Oder "systemhalt now".
+
+Hallo Netzwerk
+In Windows kann man mit "ipconfig" und optionalem " /all" die Konfiguration der Netzweradapter einsehen.
