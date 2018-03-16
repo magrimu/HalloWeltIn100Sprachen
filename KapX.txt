@@ -1,0 +1,26 @@
+Hallo Suchfunktion
+Öffnen Sie einen Editor und drücken sie "Strg" + F. (In vim Befehlsmodus :s/.) Sie können nun eine Buchstabenfolge 
+eingeben, die im geöffneten Dokument gefunden wird (nach Enter; nächstes Vorkommen: F3. In vim: n.). Das Manko daran: man muss 
+das Suchergebnis genau vorgeben. Wenn man dagegen bestimmte Umschreibungen kennt, die falls zutreffend, Ergebnis der Suchanfrage
+sein sollen, bedient man sich Regulärer Ausdrücke - engl. regular expressions - kurz RegEx. Vim unterstützt RegEx, die meisten 
+anderen Editoren nicht. (Daher der Linktipp; jede Programmiersprache bietet RegEx Funktionalitäten.)
+
+Hallo RegEx Ranges
+Linktip: https://regexr.com/
+Eine Umschreibung kann z.B. sein: Großbuchstabe. Dies wären [A-Z]. Genauer: mittels eckiger Klammern und " - " zwischen den 
+Bereichsgrenzen wird ein Range (deutsch: Bereich) angegeben. Die RegEx [A-Z] trifft also alle großen Buchstaben zwischen A und Z.
+Andere beliebte Ranges sind Kleinbuchstaben: "[a-z]" und Zahlen "[0-9]"
+
+Hallo Regex .,+ und *
+. trifft jedes Zeichen, ausser newline.
++ bedeutet: die RegEx muss 1 oder mehrmals vorkommen.
+* bedeutet: die RegEx muss 0 oder mehrmals vorkommen.
++ und * sind Quantifizierer. D.h. sie quantifizieren ein (anderes) Ziel (wie z.B. "." oder [A-z]).
+
+Hallo RegEx $ und ^
+$ bedeutet: am Ende der Zeile / des Strings.
+^ bedeutet: am Anfang der Zeile / des Strings.
+
+Hallo RegEx Wortblock ()
+Sucht man eine Buchstabenfolge (Wort), so kann man diese mittels runden Klammern gruppieren.
+"(ab)+" trifft z.B. abababab.
