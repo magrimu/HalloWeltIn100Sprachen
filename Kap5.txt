@@ -1,6 +1,6 @@
 Hallo Systembefehle
 Der direkte Weg, Befehle an das Betriebssystem zu erteilen ist die Kommandozeile.
-Viele Funktionen sind auch über graphische Benutzerschnittstelen zu erreichen, aber meist ist die Kommandozeile schneller.
+Viele Funktionen sind auch über graphische Benutzerschnittstellen zu erreichen, aber meist ist die Kommandozeile schneller.
 
 Hallo Herunterfahren
 In Windows befiehlt man "shutdown /s /t 0" für Rechner herunterfahren.
