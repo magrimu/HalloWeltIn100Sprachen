@@ -1,4 +1,4 @@
-Hallo Suchfunktion
+﻿Hallo Suchfunktion
 Öffnen Sie einen Editor und drücken sie "Strg" + F. (In vim Befehlsmodus :s/.) Sie können nun eine Buchstabenfolge 
 eingeben, die im geöffneten Dokument gefunden wird (nach Enter; nächstes Vorkommen: F3. In vim: n.). Das Manko daran: man muss 
 das Suchergebnis genau vorgeben. Wenn man dagegen bestimmte Umschreibungen kennt, die falls zutreffend, Ergebnis der Suchanfrage
@@ -18,8 +18,8 @@ Hallo Regex .,+ und *
 + und * sind Quantifizierer. D.h. sie quantifizieren ein (anderes) Ziel (wie z.B. "." oder [A-z]).
 
 Hallo RegEx $ und ^
-$ bedeutet: am Ende der Zeile / des Strings.
-^ bedeutet: am Anfang der Zeile / des Strings.
+$ bedeutet: am Ende der Zeile bzw. des Strings.
+^ bedeutet: am Anfang der Zeile bzw. des Strings.
 
 Hallo RegEx Wortblock ()
 Sucht man eine Buchstabenfolge (Wort), so kann man diese mittels runden Klammern gruppieren.

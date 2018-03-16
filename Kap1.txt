@@ -40,6 +40,20 @@ die also Dezimalzahlen von 0 bis 15 darstellen können und schreiben dafür 0 bis 
 0 bis 9 bedeuten Belegungen des Bits wie sie die Dezimalzahl ergeben und A bis F für die Werte 10 bis 15. Damit können wir die Belegung von 
 4 Bits in einem Zeichen (hier: einstellige Zahl oder einer der Buchstaben A-F) darstellen. 
 
+Hallo Datentypen
+Wir können also Zahlen im Binärsystem mittels Register speichern. Wir können diese Zahlen als Buchstaben interpretieren.
+Eine Sammlung von Buchstaben nennen wir String. Das ist ein Datentyp und es bleibt derselbe Datentyp, selbst wenn keine Elemente der Menge Buchstaben darin sind.
+Dies ist der leere String "".
+
+Hallo Integer
+Wir wissen, wie wir Dezimalzahlen in Bits speichern können. Typischerweise speichert man ganzzahlige Werte im Datentyp Integer. Dieser Datentyp fasst in meist 32
+Bit Werte bis +- 2.147.483.647.
+
+Hallo Gleitkommazahlen
+Für unseren Komfort definieren wir Kommazahlen hinzu. Man definiert z.B. einen Bereich für eine Ganzzahl wie beim Datentyp Integer. Dazu legt man einen Bereich
+fest, für den Faktor *10^$exponent und $exponent kann halt negativ sein. In Echt nimmt man die Basis 2, aber die Basis 10 kann dasselbe Prinzip verdeutlichen.
+Extrem schwierig ist es dabei z.B. den Wert 0.2 exakt darzustellen.
+
 Hallo Schriftart
 Wenn wir wissen, welches Zeichen wir darstellen wollen, wissen wir immer noch nicht, wie wir es zeichenen sollen - kaligraphisch.
 Dafür gibt es Fonts (dt. Schriftarten). Bsp: Consolas, Roman New Times, Arial Narrow. Schriftarten kann man selbst definieren //TODO Projekt einfügen (?)
@@ -50,11 +64,6 @@ Mit einem Logik Gatter kann man semantische Schlußfolgerungen aus der Belegung e
 Abbildung von Eingabebits auf Ausgabebits. Die elementaren Realtionen sind OR, XOR, AND und NAND. Seien a und b Eingabebits und c ein Ausgabebit,
 dann bilden AND die Belegung a=1, b=1 auf c=1 ab. OR bildet a=1 oder b=1 auf 1 ab, XOR ebenfalls, aber exklusiv - d.h. nur wenn 1 Bit aus a,b = 0 ist wird auf 1 abgebildet.
 NAND ist die Verneinung von AND, heißt: nur die Belegung a=0, b=0 wird auf c=1 abgebildet.
-
-Hallo Datentypen
-Wir können also Zahlen im Binärsystem mittels Register speichern. Wir können diese Zahlen als Buchstaben interpretieren.
-Eine Sammlung von Buchstaben nennen wir String. Das ist ein Datentyp. Für unseren Komfort definieren wir Kommazahlen hinzu.
-TODO Gleitkommazahlen
 
 Hallo Instruktionen
 Nehmen wir Register einer bestimmten Anzahl x und speichern darin Werte des Datentyps y. Um diese Werte zu verändern definieren wir elementare Instruktionen.
