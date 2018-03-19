@@ -3,7 +3,7 @@
 
 Vorläufige Inhaltsangabe:
 
-1 ) Start Conway, Binärestrukturen
+1 ) Start Conway, Binärestrukturen <br>
 2 ) BIOS (8 Zeichen)
 3 ) Schrift
 4 ) cmd / notepad
