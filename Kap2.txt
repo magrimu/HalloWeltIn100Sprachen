@@ -1,3 +1,6 @@
 Hallo BIOS
-BIOS steht für "Basic Input/Output System" und ist ein Standard, der allen gebräuchlichen Komponenten von Heimcomputern eine rudimentäre
-Kommunikation ermöglicht. 
+BIOS steht fÃ¼r "Basic Input/Output System" und ist ein Standard, der seit 1981 allen gebrÃ¤uchlichen Komponenten von Heimcomputern eine rudimentÃ¤re
+Kommunikation ermÃ¶glicht. 
+
+Hallo UEFI
+Damit es ein wenig komfortabler zugeht, hat man dann in den 2k10er Jahren UEFA entwickelt.
