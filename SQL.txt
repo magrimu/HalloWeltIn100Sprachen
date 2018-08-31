@@ -10,5 +10,4 @@ Tabellen haben Spalten (engl. Columns) eines Typs und Einträge (engl. Rows), di
 Am besten ändert man Tabellen und Spalten (hinzufügen und löschen) in einer GUI. MSSQL Management Studio oder mySQL PhPAdmin stehen dafür zur 
 Verfügung. Rechtsklick add/delete. Alternativ ist der Befehl Create Table; bsp. "create table t1 (c1 int)" erstellt eine Tabelle namens t1, die die Spalte c1 enthält, die Werte des Typs Integer aufnimt.
 Befüllt werden Tabellen mittels insert: "insert into t1 (c1) values (5)" fügt in die Tabelle t1 in der Spalte c1 den Wert 5 ein.
-Abgefragt werden inhalte mittels selsct: "select c1,* from t1 where true" liefert erst Werte der Spalte c1, dann alle Spalten der Tabelle t1. "where true" ist optional, hier steht es, um die Syntax einer Einschränkung vorzustellen: im where kann mandie Ergebnismenge filtern.
-Nach dem Inhalten fragt man über SELECT * FROM Tabelle WHERE Tabelle.Spalte = wert. Hinzufügen geht mittels INSERT INTO TABLE VALUES
+Abgefragt werden inhalte mittels selsct: "select c1,* from t1 where true" liefert erst Werte der Spalte c1, dann alle Spalten der Tabelle t1. "where true" ist optional, hier steht es, um die Syntax einer Einschränkung vorzustellen: im where kann man die Ergebnismenge filtern.
