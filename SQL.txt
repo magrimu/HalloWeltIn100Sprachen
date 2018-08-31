@@ -4,9 +4,11 @@ Structured Query Language eignet sich dazu, Datenbanken nach Tabelleninhalten zu
 Datenbanken
 Klassische Datenbanken (im Gegensatz zu non-SQL Datenbanken) gibt es im Amateurbereich vor allem in den Ausprägungen mySQL 
 (umsonst) und Microsoft SQL (geprochen MS Sequel (Server) - kompfortabler, teuer). Die Installation eines Server (Programm)s ist nötig, 
-um Datenbanken verfügbar zu machen. Vorher erscheinen Datenbanken nicht verwendebare Dateien. Bindet man diese Dateien in eine Serverinstanz 
-ein - dazu braucht man die Berechtigung das zu tun: i.e. die Rolle admin - kann man der Datenbank Tabellen hinzufügen.
-Eine Tabelle hat Spalten eines Typs und Einträge, die den Spalten entsprechen.
+um Datenbanken verfügbar zu machen. Vorher erscheinen Datenbanken als nicht verwendbare Dateien. Bindet man diese Dateien in eine Serverinstanz 
+ein - dazu braucht man die Berechtigung das zu tun: i.e. die Rolle admin - kann man der Datenbank Tabellen hinzufügen. Die Datenbank ermöglicht Speichern und Lesen von Datensätzen auf einer Abstraktion des Dateisystems.
+Tabellen haben Spalten (engl. Columns) eines Typs und Einträge (engl. Rows), die den Spalten entsprechen.
 Am besten ändert man Tabellen und Spalten (hinzufügen und löschen) in einer GUI. MSSQL Management Studio oder mySQL PhPAdmin stehen dafür zur 
-Verfügung. Rechtsklick add/delete.
+Verfügung. Rechtsklick add/delete. Alternativ ist der Befehl Create Table; bsp. "create table t1 (c1 int)" erstellt eine Tabelle namens t1, die die Spalte c1 enthält, die Werte des Typs Integer aufnimt.
+Befüllt werden Tabellen mittels insert: "insert into t1 (c1) values (5)" fügt in die Tabelle t1 in der Spalte c1 den Wert 5 ein.
+Abgefragt werden inhalte mittels selsct: "select c1,* from t1 where true" liefert erst Werte der Spalte c1, dann alle Spalten der Tabelle t1. "where true" ist optional, hier steht es, um die Syntax einer Einschränkung vorzustellen: im where kann mandie Ergebnismenge filtern.
 Nach dem Inhalten fragt man über SELECT * FROM Tabelle WHERE Tabelle.Spalte = wert. Hinzufügen geht mittels INSERT INTO TABLE VALUES
